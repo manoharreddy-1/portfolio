@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manohar Reddy Bommareddy - CSE-AI Student | Python, ML & Full-Stack Developer Portfolio" />
+  <title>Manohar Reddy Bommareddy | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    (function () {
+      const saved = localStorage.getItem('theme');
+      const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersLight ? 'light' : 'dark'));
+    })();
+  </script>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--1"></div>
+  <div class="bg-glow bg-glow--2"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__logo">MANOHAR<span>.</span></a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <span class="theme-toggle__label">Theme</span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container hero__content">
+      <div class="hero__photo-wrap">
+        <div class="hero__photo-ring"></div>
+        <img src="assets/profile.png" alt="Manohar Reddy Bommareddy" class="hero__photo" />
+      </div>
+      <p class="hero__eyebrow">Welcome to my portfolio</p>
+      <h1 class="hero__title">
+        <span class="hero__greeting">Hi, I'm</span>
+        <span class="hero__name gradient-text">Manohar Reddy Bommareddy</span>
+      </h1>
+      <p class="hero__subtitle">
+        B.Tech CSE-AI student passionate about Machine Learning, Python development,
+        and building intelligent solutions with modern web technologies.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+      </div>
+      <div class="hero__social">
+        <a href="https://github.com/manoharreddy-1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/bommareddy-manohar-reddy-79bab6292/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bommareddymanoharreddy999@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer" aria-label="Email" id="heroEmail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">About Me</span>
+        <h2 class="section__title">Aspiring AI & ML Developer</h2>
+        <p class="section__desc">
+          A dedicated Computer Science (AI) student with a strong foundation in programming,
+          machine learning, and web development. I enjoy turning complex problems into
+          practical, data-driven solutions.
+        </p>
+      </div>
+      <div class="about__grid">
+        <div class="about__card">
+          <div class="about__icon">01</div>
+          <h3>Problem Solver</h3>
+          <p>Analytical mindset with hands-on experience in ML algorithms, data preprocessing, and model evaluation.</p>
+        </div>
+        <div class="about__card">
+          <div class="about__icon">02</div>
+          <h3>Continuous Learner</h3>
+          <p>Certified in Machine Learning, Generative AI, IoT, and Salesforce — always expanding my technical toolkit.</p>
+        </div>
+        <div class="about__card">
+          <div class="about__icon">03</div>
+          <h3>Team Player</h3>
+          <p>Strong academic record with 84% in B.Tech, actively building projects that combine AI with real-world applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Skills & Expertise</span>
+        <h2 class="section__title">Technical Proficiency</h2>
+        <p class="section__desc">
+          Core technologies and tools I use to build intelligent applications and web solutions.
+        </p>
+      </div>
+      <div class="skills__grid">
+        <div class="skill-card" data-level="85">
+          <div class="skill-card__header">
+            <div class="skill-card__title">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="skill-card__logo" />
+              <span class="skill-card__name">Python</span>
+            </div>
+            <span class="skill-card__pct">85%</span>
+          </div>
+          <div class="skill-card__bar"><div class="skill-card__fill"></div></div>
+          <p class="skill-card__desc">ML libraries, data analysis, scripting</p>
+        </div>
+        <div class="skill-card" data-level="80">
+          <div class="skill-card__header">
+            <div class="skill-card__title">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="Machine Learning" class="skill-card__logo" />
+              <span class="skill-card__name">Machine Learning</span>
+            </div>
+            <span class="skill-card__pct">80%</span>
+          </div>
+          <div class="skill-card__bar"><div class="skill-card__fill"></div></div>
+          <p class="skill-card__desc">Supervised & unsupervised learning, model training</p>
+        </div>
+        <div class="skill-card" data-level="75">
+          <div class="skill-card__header">
+            <div class="skill-card__title">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="skill-card__logo" />
+              <span class="skill-card__name">Java</span>
+            </div>
+            <span class="skill-card__pct">75%</span>
+          </div>
+          <div class="skill-card__bar"><div class="skill-card__fill"></div></div>
+          <p class="skill-card__desc">OOP, data structures, application development</p>
+        </div>
+        <div class="skill-card" data-level="70">
+          <div class="skill-card__header">
+            <div class="skill-card__title">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="skill-card__logo" title="C" />
+            </div>
+            <span class="skill-card__pct">70%</span>
+          </div>
+          <div class="skill-card__bar"><div class="skill-card__fill"></div></div>
+          <p class="skill-card__desc">Fundamentals, memory management, algorithms</p>
+        </div>
+        <div class="skill-card" data-level="78">
+          <div class="skill-card__header">
+            <div class="skill-card__title">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-card__logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-card__logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-card__logo" />
+              <span class="skill-card__name">HTML, CSS & JS</span>
+            </div>
+            <span class="skill-card__pct">78%</span>
+          </div>
+          <div class="skill-card__bar"><div class="skill-card__fill"></div></div>
+          <p class="skill-card__desc">Responsive UI, interactive web pages</p>
+        </div>
+      </div>
+      <div class="skills__tags">
+        <span class="tag">Python</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Java</span>
+        <span class="tag">C</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Generative AI</span>
+        <span class="tag">IoT</span>
+        <span class="tag">Salesforce</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">My Work</span>
+        <h2 class="section__title">Featured Projects</h2>
+        <p class="section__desc">
+          Real-world projects showcasing my skills in AI, machine learning, and full-stack web development.
+        </p>
+      </div>
+
+      <div class="projects__featured">
+        <article class="project-card project-card--featured">
+          <div class="project-card__visual project-card__visual--rag">
+            <span class="project-card__emoji">🤖</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Multi-Domain RAG Assistant</h3>
+            <p>
+              An intelligent retrieval-augmented generation assistant that answers queries across
+              multiple domains using document embeddings and contextual AI responses.
+            </p>
+            <div class="project-card__tags">
+              <span>Python</span>
+              <span>Generative AI</span>
+              <span>RAG</span>
+              <span>HTML</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://mini-project-eight-alpha.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--primary">Live Demo</a>
+              <a href="https://github.com/manoharreddy-1/Multi-Domain-RAG-Assistant" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="projects__grid">
+        <article class="project-card">
+          <div class="project-card__visual project-card__visual--ml">
+            <span class="project-card__emoji">🎓</span>
+          </div>
+          <div class="project-card__body">
+            <h3>College Recommendation System</h3>
+            <p>
+              ML-powered system that recommends colleges based on student preferences,
+              academic scores, and eligibility criteria.
+            </p>
+            <div class="project-card__tags">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Data Analysis</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/manoharreddy-1/College-Recommendation-System" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">View Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__visual project-card__visual--web">
+            <span class="project-card__emoji">🏠</span>
+          </div>
+          <div class="project-card__body">
+            <h3>College Hostel Complaint Portal</h3>
+            <p>
+              A web-based portal for students to submit, track, and manage hostel complaints
+              with an intuitive and responsive interface.
+            </p>
+            <div class="project-card__tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/manoharreddy-1/College-Hostel-Complaint-Portal" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">View Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="education">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Education</span>
+        <h2 class="section__title">Academic Background</h2>
+        <p class="section__desc">
+          My educational journey that shaped my foundation in computer science and artificial intelligence.
+        </p>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__year">2023 – 2027</span>
+            <h3>B.Tech (CSE-AI) — 3rd Year</h3>
+            <p class="timeline__inst">Sri Vasavi Engineering College</p>
+            <div class="timeline__meta">
+              <span>Board: JNTU – Kakinada</span>
+              <span class="timeline__score">84%</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__year">2021 – 2023</span>
+            <h3>Intermediate (M.P.C)</h3>
+            <p class="timeline__inst">Sri Chaitanya Junior College</p>
+            <div class="timeline__meta">
+              <span>Board: BIE – AP</span>
+              <span class="timeline__score">92.5%</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__year">2020 – 2021</span>
+            <h3>S.S.C.</h3>
+            <p class="timeline__inst">Chigurupati Sri Krishna Veni High School</p>
+            <div class="timeline__meta">
+              <span>Board: BSE – AP</span>
+              <span class="timeline__score">94.5%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Certifications & Achievements</span>
+        <h2 class="section__title">Professional Credentials</h2>
+        <p class="section__desc">
+          Industry-recognized certifications demonstrating expertise in ML, AI, IoT, and cloud technologies.
+        </p>
+      </div>
+      <div class="cert-grid">
+        <article class="cert-card">
+          <div class="cert-card__body">
+            <h3>Machine Learning with Python</h3>
+            <p class="cert-card__issuer">freeCodeCamp — Professional Certification</p>
+            <div class="cert-card__actions">
+              <button class="btn btn--sm btn--primary" data-modal="fcc" data-img="assets/certificates/fcc-ml-python.png">View Certificate</button>
+              <a href="https://freecodecamp.org/certification/fcc-ec6d4eda-efae-4cee-8656-a0ff2a0718ba/machine-learning-with-python-v7" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--outline">Verify</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-card__body">
+            <h3>TCS-iON Career Edge</h3>
+            <p class="cert-card__issuer">Digital Certification — TATA GENAI</p>
+            <div class="cert-card__actions">
+              <a href="assets/certificates/tata-genai.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--primary">View PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-card__body">
+            <h3>Generative AI</h3>
+            <p class="cert-card__issuer">Oracle Certification</p>
+            <div class="cert-card__actions">
+              <a href="assets/certificates/oracle-genai.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--primary">View PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-card__body">
+            <h3>Introduction to IoT</h3>
+            <p class="cert-card__issuer">NPTEL Certification</p>
+            <div class="cert-card__actions">
+              <a href="assets/certificates/iot.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--primary">View PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-card__body">
+            <h3>Salesforce Certified</h3>
+            <p class="cert-card__issuer">Salesforce Professional Certification</p>
+            <div class="cert-card__actions">
+              <a href="assets/certificates/salesforce.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--primary">View PDF</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Get In Touch</span>
+        <h2 class="section__title">Let's Connect</h2>
+        <p class="section__desc">
+          I'm open to internships, collaborations, and exciting opportunities in AI/ML and software development.
+        </p>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div>
+              <span class="contact__label">Email</span>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bommareddymanoharreddy999@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer">bommareddymanoharreddy999@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <span class="contact__label">Phone</span>
+              <a href="tel:+917207347183">+91-7207347183</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <span class="contact__label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/bommareddy-manohar-reddy-79bab6292/" target="_blank" rel="noopener noreferrer">bommareddy-manohar-reddy</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div>
+              <span class="contact__label">GitHub</span>
+              <a href="https://github.com/manoharreddy-1" target="_blank" rel="noopener noreferrer">manoharreddy-1</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm" action="https://formsubmit.co/bommareddymanoharreddy999@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New message from portfolio" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Manohar Reddy Bommareddy. All rights reserved.</p>
+      <p class="footer__mono">Built with passion for AI &amp; code</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="certModal" aria-hidden="true">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose" aria-label="Close">&times;</button>
+      <img src="assets/certificates/fcc-ml-python.png" alt="freeCodeCamp ML Certificate" id="modalImage" />
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
