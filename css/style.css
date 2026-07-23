@@ -813,6 +813,10 @@ ul {
   background: linear-gradient(135deg, #1a2744 0%, #2a1a3d 100%);
 }
 
+.project-card__visual--nexus {
+  background: linear-gradient(135deg, #1e293b 0%, #4338ca 100%);
+}
+
 .project-card__emoji {
   font-size: 3.5rem;
 }
