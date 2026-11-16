@@ -101,7 +101,7 @@
     { threshold: 0.1 }
   );
 
-  document.querySelectorAll('.about__card, .timeline__item, .cert-card, .project-card').forEach((el) => {
+  document.querySelectorAll('.about__card, .timeline__item, .cert-card, .project-card, .case-study-card').forEach((el) => {
     el.classList.add('fade-up');
     fadeObserver.observe(el);
   });
